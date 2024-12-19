@@ -1,0 +1,14 @@
+@charset "utf-8";
+@import url(../css/reset.css); /* 기존 reset.css에서 초기 값을 연결 했기 때문에 그대로 연결 한다 */
+@import url(../css/common.css);
+
+
+.sub_visual {
+    height: 500px;
+}
+
+.sub_visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,17 @@
+@charset "utf-8";
+@import url(reset.css); /* <= 여기에 초기 값 작성  */
+@import url(common.css);/* 공통적인 스타일을 정리하는 곳 폰트, 최대 넓이 값 , 등등 */
+
+
+/*  main_visual  */
+
+.main_visual {
+    height: 100vh; /* 화면 크기에 따라  높이값 조절 */ /* 왜 vw는 안쓰지? */
+}
+
+.main_visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+

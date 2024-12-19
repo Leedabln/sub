@@ -1,0 +1,66 @@
+@import url('../css/common.css');
+
+.header { /* 맨위 영역 */
+    height: 100px;
+    border-bottom: 1px solid#333; /* 밑에 테두리 */
+}
+
+.header .inner {
+    /* 최대 넓이값 주기 */
+    max-width: 1280px;
+    width: calc(100% - 40px);  /* 양옆 여백은 40px 남긴다 */
+    height: 100%; /* 필수 */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .inner .nav .gnb {
+    display: flex;
+    gap: 40px;
+}
+
+.header .inner .nav .gnb > li {
+    position: relative; /* 기준으로 */
+}
+
+.header .inner .nav .gnb > li .depth01 { /* 메뉴의 제목들을 _ */
+    display: block;
+    line-height: 100px;
+}
+
+.header .inner .nav .gnb > li .depth02 {
+    position: absolute;/* 움직이겠다 */
+    top: 100px; /* 위에서 100px 만큼 밑으로 */
+    left: 0;
+    background-color: aliceblue;
+
+    display: none; /* 🤍 2차 메뉴 숨기기 🤍 */
+}
+
+.header .inner .nav .gnb > li .depth02 li {
+    padding: 15px; /* 2차 메뉴들의 좌우위아래 넓이 값 */
+    white-space: nowrap; /* 줄 바꿈 처리 안되도록 */
+}
+
+/*  main_visual  */
+
+.main_visual {
+    height: 100vh; /* 화면 크기에 따라  높이값 조절 */ /* 왜 vw는 안쓰지? */
+}
+
+.main_visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*  footer  */
+
+.footer { 
+    padding: 50px 0; /* 위아래 */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
